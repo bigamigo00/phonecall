@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.a {
+  height: 200px;
+  width: 200px;
+
+  border-radius: 50%;
+  background-color: #a66cff;
+
+  transition: all 0.2s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: vibro;
+
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.a:hover {
+  box-shadow: 0 0 2px 20px #9c9efe, 0 0 2px 40px #b1e1ff;
+  animation-name: vibro;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+
+  animation-name: phone;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes vibro {
+  0% {
+    box-shadow: 0 0 2px 0px #9c9efe, 0 0 2px 0px #b1e1ff;
+  }
+/* 
+  20% {
+    box-shadow: 0 0 2px 30px #9c9efeb4, 0 0 2px 50px #b1e1ffb0;
+  } */
+
+  50% {
+    box-shadow: 0 0 2px 20px #9c9efe5d, 0 0 2px 40px #b1e1ff73;
+  }
+
+  100% {
+    box-shadow: 0 0 2px 60px #9c9efe00, 0 0 2px 80px #b1e1ff00
+  }
+}
+
+@keyframes phone{
+0%{
+  transform: rotate(0);
+}
+
+10%{
+  transform: rotate(20deg);
+}
+
+20% {
+  transform: rotate(0);
+
+}
+ 30% {
+  transform: rotate(20deg);
+
+ }
+
+ 40%{
+  transform: rotate(0);
+ }
+
+ 50%{
+  transform: rotate(20deg);
+ }
+
+ 60%{
+  transform: rotate(0);
+ }
+  70%{
+    transform: rotate(20deg);
+  }
+
+  80%{
+    transform: rotate(0);
+  }
+  90%{
+    transform: rotate(20deg);
+  }
+
+  100%{
+    transform: rotate(0);
+  }
+}
+
+
